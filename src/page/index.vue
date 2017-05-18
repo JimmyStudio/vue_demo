@@ -1,27 +1,25 @@
 <template>
     <div>
-        <header-component/>
-        <div>this is template body</div>
-        <other-component/>
+        <h1 class="logo">cnodejs Api Test</h1>
+        <ul class="list">
+            <li v-for="item in lists" v-text="item.title"></li>
+        </ul>
     </div>
 </template>
-<style>
-    body {
-        background-color: #ff0000;
-    }
-</style>
 <script>
-    import HeaderComponent from './components/header.vue'
-    import OtherComponent from './components/other.vue'
-    export default{
-        data(){
+    export default {
+        data() {
             return {
-                msg: 'hello vue'
+                lists:[{
+                    id:1,
+                    title:"test title 1"
+                },
+                {
+                    id:2,
+                    title:"test title 2"
+                }
+                ]
             }
-        },
-        components: {
-            'other-component': OtherComponent,
-            HeaderComponent,
         }
     }
 </script>
