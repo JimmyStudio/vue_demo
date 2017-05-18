@@ -1,5 +1,9 @@
-.logo {color: red;}
+.logo {
+  font-size: 50px;
+  color: blue;
+}
 .list {
   line-height: 2;
-  li {border-bottom: 1px solid #ddd;}
+  color: red;
+  li {border-bottom: 2px solid #ddd;}
 }

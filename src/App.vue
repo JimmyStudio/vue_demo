@@ -15,6 +15,6 @@
     }
 </script>
 
-<style>
-  @import "./style/scss/style.scss";
+<style lang="scss">
+  @import "style/style.scss";
 </style>
